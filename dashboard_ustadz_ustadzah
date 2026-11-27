@@ -1,0 +1,20 @@
+<div class="empty">
+<div class="ei"><i data-lucide="clipboard-list"></i></div>
+<b>Belum ada absensi hari ini</b>
+Absensi murid akan muncul di sini saat murid mulai melakukan absensi.
+</div>
+
+</main>
+
+<div class="foot">NgajiKu — Pendaftaran &amp; Monitoring Kehadiran Ngaji</div>
+</div>
+
+<script>
+lucide.createIcons();
+const b=document.body;
+document.getElementById('burger').onclick=()=>b.classList.toggle('menu-open');
+document.getElementById('overlay').onclick=()=>b.classList.remove('menu-open');
+</script>
+
+</body>
+</html>

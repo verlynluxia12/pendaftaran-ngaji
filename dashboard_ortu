@@ -1,0 +1,21 @@
+<div class="item">
+<h3>Selamat Datang Tahun Ajaran Baru</h3>
+<p>Assalamualaikum. Pendaftaran murid baru tahun ajaran ini dibuka hingga akhir bulan. Silakan orang tua mendaftarkan anak melal...</p>
+<small>24 Nov 2026, 21.13</small>
+</div>
+</div>
+
+</main>
+
+<div class="foot">NgajiKu — Pendaftaran &amp; Monitoring Kehadiran Ngaji</div>
+</div>
+
+<script>
+lucide.createIcons();
+const b=document.body;
+document.getElementById('burger').onclick=()=>b.classList.toggle('menu-open');
+document.getElementById('overlay').onclick=()=>b.classList.remove('menu-open');
+</script>
+
+</body>
+</html>

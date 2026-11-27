@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NgajiKu — Pendaftaran &amp; Monitoring Kehadiran Ngaji</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<header class="nav">
+<a class="brand" href="index.html">
+<span class="logo">N</span>NgajiKu
+</a>
+<a class="login" href="login.html">
+<i data-lucide="log-in"></i>Masuk
+</a>
+</header>
+
+<section class="hero">
+
+<span class="pill">
+<i data-lucide="moon-star"></i>Tumbuh bersama Al-Quran
+</span>
+
+<h1>Pendaftaran Anak Ngaji &amp; Monitoring Kehadiran</h1>
+
+<p>
+Satu aplikasi untuk orang tua, murid, dan ustadz/ustadzah. Daftarkan anak, catat kehadiran, dan pantau perkembangan mengaji dengan mudah — semuanya dalam satu tempat.
+</p>
+
+<div class="actions">
+<a class="btn btn-primary" href="register.html">
+Daftarkan Anak Anda <i data-lucide="arrow-right"></i>
+</a>
+<a class="btn btn-outline" href="login.html">
+Sudah Punya Akun
+</a>
+</div>
+
+<div class="stats-wrap">
+
+<div class="stat-box">
+<b>120+</b>
+<span>Murid Aktif</span>
+</div>
+
+<div class="stat-box">
+<b>4</b>
+<span>Kelas Mengaji</span>
+</div>
+
+<div class="stat-box">
+<b>92%</b>
+<span>Rata-rata Kehadiran</span>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+
+<h2>Semua yang Dibutuhkan TPQ Anda</h2>
+
+<p class="sub">
+Dirancang agar nyaman digunakan oleh anak-anak, orang tua, maupun pengajar.
+</p>
+
+<div class="grid">
+
+<div class="fcard">
+<div class="ficon"><i data-lucide="user-plus"></i></div>
+<h3>Pendaftaran Online</h3>
+<p>Orang tua dapat mendaftarkan anak mengikuti kegiatan mengaji kapan saja, tanpa perlu datang langsung.</p>
+</div>
+
+<div class="fcard">
+<div class="ficon"><i data-lucide="clipboard-check"></i></div>
+<h3>Absensi Mudah</h3>
+<p>Murid melakukan absensi sendiri dengan satu tombol besar pada jadwal mengaji yang ditentukan.</p>
+</div>
+
+<div class="fcard">
+<div class="ficon"><i data-lucide="calendar-check"></i></div>
+<h3>Monitoring Kehadiran</h3>
+<p>Orang tua memantau kehadiran anak: rekap harian, mingguan, bulanan, beserta persentasenya.</p>
+</div>
+
+<div class="fcard">
+<div class="ficon"><i data-lucide="megaphone"></i></div>
+<h3>Pengumuman Terpadu</h3>
+<p>Ustadz/ustadzah menyampaikan info kegiatan dan jadwal langsung ke orang tua dan murid.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+
+<h2>3 Role, 1 Tujuan</h2>
+
+<p class="sub">
+Setiap pengguna memiliki halaman dan hak akses masing-masing.
+</p>
+
+<div class="grid">
+
+<div class="rcard">
+<div class="head">
+<span class="ri"><i data-lucide="users"></i></span>
+<h3>Orang Tua</h3>
+</div>
+<p>Mendaftarkan anak, melihat status pendaftaran, dan memantau kehadiran anak.</p>
+</div>
+
+<div class="rcard">
+<div class="head">
+<span class="ri"><i data-lucide="book-open"></i></span>
+<h3>Murid</h3>
+</div>
+<p>Melihat jadwal mengaji, melakukan absensi mandiri, dan melihat riwayat kehadiran.</p>
+</div>
+
+<div class="rcard">
+<div class="head">
+<span class="ri"><i data-lucide="sparkles"></i></span>
+<h3>Ustadz/Ustadzah</h3>
+</div>
+<p>Mengelola pendaftaran, data murid, kelas, jadwal, absensi, dan pengumuman.</p>
+</div>
+
+</div>
+</section>
+
+<section class="cta">
+
+<h2>Mulai Perjalanan Mengaji Hari Ini</h2>
+
+<p>
+"Sebaik-baik kalian adalah yang belajar Al-Quran dan mengajarkannya."
+</p>
+
+<div class="btns">
+<a class="btn btn-light" href="register.html">Registrasi Orang Tua</a>
+<a class="btn btn-line" href="login.html">Masuk</a>
+</div>
+
+</section>
+
+<script>
+lucide.createIcons()
+</script>
+
+</body>
+</html>

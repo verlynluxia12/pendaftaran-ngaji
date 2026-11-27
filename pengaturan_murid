@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NgajiKu — Pengaturan</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<aside class="sidebar">
+<div class="sb-head"><div class="logo">N</div><div><b>NgajiKu</b><small>TPA Monitoring</small></div></div>
+
+<nav class="sb-nav">
+<a href="dashboard_murid.html"><i data-lucide="layout-dashboard"></i>Dashboard</a>
+<a href="riwayat.html"><i data-lucide="history"></i>Riwayat Kehadiran</a>
+<a href="pengumuman_murid.html"><i data-lucide="megaphone"></i>Pengumuman</a>
+<a href="profil_murid.html"><i data-lucide="circle-user-round"></i>Profil Pengguna</a>
+<a href="pengaturan_murid.html" class="active"><i data-lucide="settings"></i>Pengaturan</a>
+</nav>
+
+<div class="sb-foot"><a href="index.html"><i data-lucide="log-out"></i>Keluar</a></div>
+</aside>
+
+<div class="overlay" id="overlay"></div>
+<div class="app">
+
+<header class="topbar">
+<button class="burger" id="burger" aria-label="Menu">
+<i data-lucide="menu" style="width:32px;height:32px"></i>
+</button>
+<div class="right">
+<span class="bell"><i data-lucide="bell"></i></span>
+<a class="avatar" href="profil_murid.html"><span>A</span></a>
+</div>
+</header>
+
+<main class="main">
+
+<h1>Pengaturan</h1>
+<p class="lead">Preferensi akun dan aplikasi.</p>
+
+<div class="card">
+<h2><i data-lucide="key-round" style="color:var(--green)"></i>Ubah Kata Sandi</h2>
+
+<p class="lead" style="font-size:19px;margin-bottom:20px">
+Ganti kata sandi akun Anda menjadi yang mudah Anda ingat.
+</p>
+
+<form action="pengaturan_murid.html">
+
+<div class="field">
+<label>Kata Sandi Baru <span class="req">*</span></label>
+<input type="password" placeholder="Min. 6 karakter" required minlength="6">
+</div>
+
+<div class="field">
+<label>Konfirmasi Kata Sandi Baru <span class="req">*</span></label>
+<input type="password" placeholder="Ulangi kata sandi baru" required>
+</div>
+
+<button class="btn btn-primary">Simpan Kata Sandi Baru</button>
+</form>
+</div>
+
+<div class="card">
+<h2><i data-lucide="moon-star" style="color:var(--green)"></i>Tema Tampilan</h2>
+<p class="lead" style="margin:0;font-size:19px">
+Aplikasi menggunakan tema hijau sage dan cream yang nyaman untuk dibaca.
+</p>
+</div>
+
+<div class="card">
+<h2><i data-lucide="info" style="color:var(--green)"></i>Informasi Akun</h2>
+<p class="lead" style="margin:0;font-size:19px">
+Anda masuk sebagai <b style="color:var(--ink)">murid@ngajiku.id</b>. Ubah data diri Anda di halaman Profil Pengguna.
+</p>
+</div>
+
+<div class="card danger-card">
+<h2>Keluar Akun</h2>
+<p class="lead" style="font-size:19px">
+Keluar dari akun ini di perangkat saat ini. Data Anda tetap tersimpan aman.
+</p>
+<a class="btn btn-danger" href="index.html">
+<i data-lucide="log-out"></i>Keluar dari Akun
+</a>
+</div>
+
+</main>
+
+<div class="foot">NgajiKu — Pendaftaran &amp; Monitoring Kehadiran Ngaji</div>
+</div>
+
+<script>
+lucide.createIcons();
+const b=document.body;
+document.getElementById('burger').onclick=()=>b.classList.toggle('menu-open');
+document.getElementById('overlay').onclick=()=>b.classList.remove('menu-open');
+</script>
+
+</body>
+</html>

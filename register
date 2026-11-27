@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Registrasi — NgajiKu</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<div class="auth">
+
+<a class="back" href="index.html">
+<i data-lucide="arrow-left"></i>Kembali ke halaman utama
+</a>
+
+<h1>Registrasi Orang Tua</h1>
+<p class="lead">Isi data berikut untuk membuat akun orang tua.</p>
+
+<form action="dashboard_ortu.html">
+
+<div class="field">
+<label>Nama Lengkap <span class="req">*</span></label>
+<input name="nama" placeholder="Nama lengkap Anda" required>
+</div>
+
+<div class="field">
+<label>Email <span class="req">*</span></label>
+<input type="email" name="email" placeholder="nama@email.com" required>
+</div>
+
+<div class="field">
+<label>Nomor Telepon</label>
+<input name="telepon" placeholder="08xxxxxxxxxx">
+</div>
+
+<div class="field">
+<label>Alamat</label>
+<input name="alamat" placeholder="Alamat tempat tinggal">
+</div>
+
+<div class="field">
+<label>Kata Sandi <span class="req">*</span></label>
+<input type="password" name="password" placeholder="Min. 6 karakter" required>
+</div>
+
+<div class="field">
+<label>Konfirmasi Sandi <span class="req">*</span></label>
+<input type="password" name="password2" placeholder="Ulangi kata sandi" required>
+</div>
+
+<button class="btn btn-primary btn-block" style="margin-top:8px">
+<i data-lucide="user-plus"></i>Buat Akun Orang Tua
+</button>
+
+</form>
+
+<p style="text-align:center;margin-top:24px;color:var(--muted);font-size:18px">
+Sudah punya akun?
+<a href="login.html" style="color:var(--green-d);font-weight:700">Masuk di sini</a>
+</p>
+
+</div>
+
+<script>
+lucide.createIcons()
+</script>
+
+</body>
+</html>

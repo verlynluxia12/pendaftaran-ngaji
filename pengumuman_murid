@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NgajiKu — Pengumuman</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<aside class="sidebar">
+<div class="sb-head"><div class="logo">N</div><div><b>NgajiKu</b><small>TPA Monitoring</small></div></div>
+
+<nav class="sb-nav">
+<a href="dashboard_murid.html"><i data-lucide="layout-dashboard"></i>Dashboard</a>
+<a href="riwayat.html"><i data-lucide="history"></i>Riwayat Kehadiran</a>
+<a href="pengumuman_murid.html" class="active"><i data-lucide="megaphone"></i>Pengumuman</a>
+<a href="profil_murid.html"><i data-lucide="circle-user-round"></i>Profil Pengguna</a>
+<a href="pengaturan_murid.html"><i data-lucide="settings"></i>Pengaturan</a>
+</nav>
+
+<div class="sb-foot"><a href="index.html"><i data-lucide="log-out"></i>Keluar</a></div>
+</aside>
+
+<div class="overlay" id="overlay"></div>
+<div class="app">
+
+<header class="topbar">
+<button class="burger" id="burger" aria-label="Menu">
+<i data-lucide="menu" style="width:32px;height:32px"></i>
+</button>
+<div class="right">
+<span class="bell"><i data-lucide="bell"></i></span>
+<a class="avatar" href="profil_murid.html"><span>A</span></a>
+</div>
+</header>
+
+<main class="main">
+
+<h1>Pengumuman</h1>
+<p class="lead">Informasi kegiatan dan jadwal terbaru.</p>
+
+<div class="item">
+<h3>Pengajian Keluarga Bulanan</h3>
+<p>Diundang seluruh orang tua murid untuk hadir dalam pengajian keluarga bulanan setiap Sabtu pekan pertama, pukul 08.00</p>
+<small>24 Nov 2026, 21.13</small>
+</div>
+
+<div class="item">
+<h3>Jadwal Libur Nasional</h3>
+<p>Kegiatan mengaji diliburkan pada tanggal libur nasional. Jadwal akan kembali normal pada hari berikutnya.</p>
+<small>24 Nov 2026, 21.13</small>
+</div>
+
+<div class="item">
+<h3>Selamat Datang Tahun Ajaran Baru</h3>
+<p>Assalamualaikum. Pendaftaran murid baru tahun ajaran ini dibuka hingga akhir bulan. Silakan orang tua mendaftarkan anak melal...</p>
+<small>24 Nov 2026, 21.13</small>
+</div>
+
+</main>
+
+<div class="foot">NgajiKu — Pendaftaran &amp; Monitoring Kehadiran Ngaji</div>
+</div>
+
+<script>
+lucide.createIcons();
+const b=document.body;
+document.getElementById('burger').onclick=()=>b.classList.toggle('menu-open');
+document.getElementById('overlay').onclick=()=>b.classList.remove('menu-open');
+</script>
+
+</body>
+</html>

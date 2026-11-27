@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NgajiKu — Data Murid</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<aside class="sidebar">
+<div class="sb-head"><div class="logo">N</div><div><b>NgajiKu</b><small>TPA Monitoring</small></div></div>
+
+<nav class="sb-nav">
+<a href="dashboard_ustadz.html"><i data-lucide="layout-dashboard"></i>Dashboard</a>
+<a href="pendaftaran.html"><i data-lucide="file-text"></i>Data Pendaftaran</a>
+<a href="murid.html" class="active"><i data-lucide="users"></i>Data Murid</a>
+<a href="kelas.html"><i data-lucide="folder-kanban"></i>Manajemen Kelas</a>
+<a href="jadwal.html"><i data-lucide="calendar-clock"></i>Manajemen Jadwal</a>
+<a href="rekap.html"><i data-lucide="list-checks"></i>Rekap Absensi</a>
+<a href="pengumuman_ustadz.html"><i data-lucide="megaphone"></i>Pengumuman</a>
+<a href="profil_ustadz.html"><i data-lucide="circle-user-round"></i>Profil Pengguna</a>
+<a href="pengaturan_ustadz.html"><i data-lucide="settings"></i>Pengaturan</a>
+</nav>
+
+<div class="sb-foot"><a href="index.html"><i data-lucide="log-out"></i>Keluar</a></div>
+</aside>
+
+<div class="overlay" id="overlay"></div>
+<div class="app">
+
+<header class="topbar">
+<button class="burger" id="burger" aria-label="Menu">
+<i data-lucide="menu" style="width:32px;height:32px"></i>
+</button>
+<div class="right">
+<span class="bell"><i data-lucide="bell"></i></span>
+<a class="avatar" href="profil_ustadz.html"><span>U</span></a>
+</div>
+</header>
+
+<main class="main">
+
+<h1>Data Murid</h1>
+<p class="lead">Murid aktif beserta kelasnya.</p>
+
+<div class="card table-wrap">
+<table>
+<tr>
+<th>Nama</th>
+<th>JK</th>
+<th>Orang Tua</th>
+<th>Kelas</th>
+</tr>
+
+<tr>
+<td><b>Ahmad Fauzan</b></td>
+<td>Laki-laki</td>
+<td>Bapak Fauzan<br><small>081234567890</small></td>
+
+<td>
+<form class="inline" action="murid.html">
+<select>
+<option>-</option>
+<option selected>Iqra 1-2</option>
+<option>Iqra 3-4</option>
+<option>Iqra 5-6</option>
+<option>Al-Quran</option>
+</select>
+<button class="btn btn-outline btn-sm">Simpan</button>
+</form>
+</td>
+</tr>
+
+</table>
+</div>
+
+</main>
+
+<div class="foot">NgajiKu — Pendaftaran &amp; Monitoring Kehadiran Ngaji</div>
+</div>
+
+<script>
+lucide.createIcons();
+const b=document.body;
+document.getElementById('burger').onclick=()=>b.classList.toggle('menu-open');
+document.getElementById('overlay').onclick=()=>b.classList.remove('menu-open');
+</script>
+
+</body>
+</html>
